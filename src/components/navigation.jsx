@@ -14,8 +14,8 @@ export default function Navigation() {
                         home
                     </li>
                 </Link>
-                <li className="fancy">resume</li>
-                <li className="fancy">about</li>
+                <Link to="/resume" className='link'><li className="fancy">resume</li></Link>
+                <Link to="/about" className='link'><li className="fancy">about</li></Link>
             </ul>
         </div>
     )

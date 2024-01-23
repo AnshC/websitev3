@@ -31,6 +31,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px 20px 10px 20px;
+    text-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .Website .content .bar * {
@@ -89,4 +92,284 @@
 
 .squares .label_secondary {
     color: var(--beige-active);
+}
+
+.copied #text {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; margin-top: 0px;} 
+    to {opacity: 1; margin-top: 20px;}
+}
+
+/* Design Page Styles */
+
+.Design .bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.Design .bar h1 {
+    width: 100%;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    animation: scroll 3s linear infinite;
+    padding-right: 50px;
+    font-size: 40px;
+    transition: all 0.2s ease;
+    opacity: 1;
+}
+
+.Design .bar h1:hover {
+    color: var(--blue);
+}
+
+.Design .bar-2 h1 {
+    width: 100%;
+    white-space: nowrap;
+    text-wrap: nowrap;
+    animation: scrollinvert 3s linear infinite;
+    padding-right: 20px;
+    font-size: 60px;
+}
+
+.Design {
+    width: 100%;
+}
+
+.Design .jumbo {
+    scroll-snap-align: end;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Design .special h1 {
+    color: transparent;
+    -webkit-text-stroke: 1px var(--blue);
+    text-stroke: 1px var(--blue);
+    transition: all 0.2s ease;
+}
+
+.Design .special h1:hover {
+    color: var(--beige);
+    -webkit-text-stroke: 1px var(--beige);
+    text-stroke: 1px var(--beige);
+}
+
+.Design .prompt {
+    color: var(--blue);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Design .prompt #icon {
+    margin-left: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes scrollinvert {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.Design .main {
+    margin: 10vh 0 10vh 0;
+}
+
+.Design .main .back {
+    color: var(--beige);
+    border: 2px solid var(--beige);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: max-content;
+    transition: transform 0.2s ease;
+}
+
+.Design .main .back:hover {
+    transform: scale(1.05);
+}
+
+.Design .main .back #icon {
+    fill: var(--beige);
+    margin-left: 10px;
+}
+
+.Design .portfolio-wrapper {
+    background-color: var(--beige);
+    width: 100%;
+    height: 100vh;
+}
+
+.Design .image-wrapper {
+    overflow-x: hidden;
+    scroll-snap-align: end;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Design .image-wrapper .head {
+    position: absolute;
+    padding: 0 5vw 0 5vw;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Design .image-wrapper .head * {
+    z-index: 10;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 960px) {
+
+    .Design .main {
+        padding: 0 10vw 0 10vw;
+    }
+
+    .Design .image-wrapper .head {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .Design .image-wrapper .head .name {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .Design .image-wrapper .head h1 {
+        font-size: 30px;
+    }
+
+    .Design .image-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .Design .image-wrapper img {
+        height: 50vh !important;
+    }
+}
+
+/* Development Page */
+
+.Dev {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Dev .back {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    font-size: 15px;
+    border: 2px solid var(--blue);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.Dev .back #icon {
+    fill: var(--blue);
+    margin-left: 10px;
+}
+
+.Dev .back:hover {
+    transform: scale(1.1);
+}
+
+/* Resume Styles */
+
+.Resume {
+    padding: 10vh 15vw 10vh 15vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Resume img {
+    height: 80vh;
+}
+
+.Resume .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.Resume h1 {
+    font-size: 50px;    
+}
+
+.Resume .text {
+    margin-top: 20px;
+}
+
+.Resume .download {
+    border: 2px solid var(--blue);
+    border-radius: 100px;
+    padding: 5px 13px 5px 13px;
+    width: max-content;
+}
+
+@media only screen and (max-width: 600px) {
+    .Resume img {
+        width: 80vw;
+        height: auto;
+    }
+}
+
+/* About Styles */
+
+.About {
+    padding: 10vh 15vw 10vh 15vw;
+}
+
+.About h1.main {
+    font-size: 50px;
 }

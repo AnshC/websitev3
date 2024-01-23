@@ -1,5 +1,6 @@
 import './styles.css'
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function MainLink (props) {
     useEffect(()=>{
@@ -27,7 +28,8 @@ export default function MainLink (props) {
 
     }, [props])
     return (
-        <div className="MainLink" id="main" style={ props.align === 'left' ? {alignItems: "flex-start"} : {alignItems: "flex-end"} }>
+        <Link className='link' to={props.title}>
+            <div className="MainLink" id="main" style={ props.align === 'left' ? {alignItems: "flex-start"} : {alignItems: "flex-end"} }>
             <div className="main">
                 <div className="text">
                     <h1 id="titleFill" className='fancy filled'>{props.title}</h1>
@@ -40,5 +42,6 @@ export default function MainLink (props) {
                 <p>{props.description}</p>
             </div>
         </div>
+        </Link>
     )
 }

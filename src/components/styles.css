@@ -39,6 +39,7 @@
 
 .Landing .head h1 {
     color: var(--blue);
+    font-size: 40px;
 }
 
 .Landing .links {

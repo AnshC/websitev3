@@ -8,6 +8,10 @@
 
 /* Root Settings */
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 :root {
     --beige: #EFEFD0;
     --beige-active: #b0b09b;
@@ -15,7 +19,7 @@
     --peach: #F7C59F;
     --lapis: #1A659E;
     --blue: #1482d6;
-    --black: #0F0F05;
+    --black: #05050f;
 }
 
 * {
@@ -45,3 +49,23 @@ body {
 .link-default {
     color: var(--blue);
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--beige);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--beige-active);
+  }

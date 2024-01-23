@@ -1,10 +1,15 @@
 import './styles.css'
 import { Scroll } from '../data/scroll'
+import { useState } from 'react';
 
 /* Component Import */
 import Navigation from '../components/navigation'
 
 export default function Website() {
+
+    const [ isCopied, setCopied ] = useState(false)
+    const [ clipboardColor, setColor ] = useState("")
+    const [ invertColor, setInvertColor ] = useState("")
     
     Scroll();
     return (
@@ -35,39 +40,50 @@ export default function Website() {
                 <div className="bar">
                     <h1 className="fancy">COLORS COLORS COLORS COLORS</h1>
                 </div>
+                <div className="copied">{isCopied === true ? <div id="text" className='fancy'>copied <span className='fancy' style={{ color: clipboardColor, backgroundColor: invertColor }}>{clipboardColor}</span> to clipboard.</div> : <></>}</div>
                 <div className="squares">
                     <div className="square" onClick={(() => {
-                        navigator.clipboard.writeText("efefd0");
+                        navigator.clipboard.writeText("#efefd0")
+                        setCopied(true)
+                        setInvertColor("#1482d6")
+                        setColor("#efefd0")
                     })}>
                         <div className="color" style={{ backgroundColor: 'var(--beige)' }}></div>
                         <p className="label fancy">beige</p>
                         <p className="label_secondary">#efefd0</p>
                     </div>
-                    <div className="square">
+                    <div className="square" onClick={(() => {
+                        navigator.clipboard.writeText("#1482d6");
+                        setCopied(true)
+                        setInvertColor("#efefd0")
+                        setColor("#1482d6")
+                    })}>
                         <div className="color" style={{ backgroundColor: 'var(--blue)' }}></div>
                         <p className="label fancy">blue</p>
                         <p className="label_secondary">#1482d6</p>
                     </div>
-                    <div className="square">
+                    <div className="square" onClick={(() => {
+                        navigator.clipboard.writeText("#1a659e");
+                        setInvertColor("#efefd0")
+                        setCopied(true)
+                        setColor("#1a659e")
+                    })}>
                         <div className="color" style={{ backgroundColor: 'var(--lapis)' }}></div>
                         <p className="label fancy">lapis</p>
                         <p className="label_secondary">#1a659e</p>
                     </div>
-                    <div className="square">
+                    <div className="square" onClick={(() => {
+                        navigator.clipboard.writeText("#05050f");
+                        setInvertColor("#1482d6")
+                        setCopied(true)
+                        setColor("#05050f")
+                    })}>
                         <div className="color" style={{ backgroundColor: 'var(--black)', border: '2px solid var(--beige)' }}></div>
                         <p className="label fancy">black</p>
-                        <p className="label_secondary">#0F0F05</p>
+                        <p className="label_secondary">#05050f</p>
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
-
-function clipboardElement(props) {
-    return (
-        <div className="clipboardElement">
-            <p>Copied {props.color} to Clipboard</p>
         </div>
     )
 }
