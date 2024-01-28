@@ -10,7 +10,7 @@ export default function Resume () {
             <div className="content">
                 <img src="/img/resume.jpg" alt="" />
                 <div className="text">
-                    <div className="download fancy">Download <HiOutlineDownload /></div>
+                    <a className="download fancy link" href="/downloads/resume.pdf" download>Download <HiOutlineDownload /></a>
                 </div>
             </div>
         </div>
