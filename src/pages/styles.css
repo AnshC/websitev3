@@ -373,3 +373,8 @@
 .About h1.main {
     font-size: 50px;
 }
+
+.About p.body {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
