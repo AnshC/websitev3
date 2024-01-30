@@ -372,9 +372,64 @@
 
 .About h1.main {
     font-size: 50px;
+    text-align: center;
+}
+
+.About p.main {
+    text-align: center;
 }
 
 .About p.body {
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+.About .content {
+    padding: 0 10vw 0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.About .content .image {
+    height: 50vh;
+    width: 50%;
+}  
+
+.About .content .image-container {
+    border-radius: 10px;
+    overflow: hidden;
+    width: fit-content;
+    height: 50vh;
+}
+
+.About .content img {
+    height: 50vh;
+}
+
+.About .content .text {
+    width: 50%;
+}
+
+@media only screen and (max-width: 1561px) {
+    .About .content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .About .content .text {
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .About .content .image {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    
 }
