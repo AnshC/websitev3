@@ -32,6 +32,7 @@ html {
 
 h1, h2, h3, p {
     color: var(--beige);
+    transition: all 0.3s;
 }
 
 body {

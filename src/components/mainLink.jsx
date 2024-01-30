@@ -1,10 +1,13 @@
 import './styles.css'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function MainLink (props) {
+
+    const [alignLink, setAlignLink] = useState('left')
+
     useEffect(()=>{
-   
+
         /* Animation */
         const links = document.querySelectorAll('.MainLink');
         links.forEach((link)=>{
@@ -29,7 +32,7 @@ export default function MainLink (props) {
     }, [props])
     return (
         <Link className='link' to={props.title}>
-            <div className="MainLink" id="main" style={ props.align === 'left' ? {alignItems: "flex-start"} : {alignItems: "flex-end"} }>
+            <div className="MainLink" id="main" style={ alignLink === 'left' ? {alignItems: "flex-start"} : {alignItems: "flex-end"} }>
             <div className="main">
                 <div className="text">
                     <h1 id="titleFill" className='fancy filled'>{props.title}</h1>

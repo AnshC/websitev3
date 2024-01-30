@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+.Website, .About, .Resume .Dev {
+    overflow-x: hidden;
+}
+
 /* Website Styles */
 
 .Website {
@@ -412,7 +416,13 @@
     width: 50%;
 }
 
-@media only screen and (max-width: 1561px) {
+@media only screen and (max-width: 1521px) {
+    .About .content {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1061px) {
     .About .content {
         flex-direction: column;
         align-items: center;
@@ -420,7 +430,7 @@
     }
 
     .About .content .text {
-        margin-top: 100px;
+        margin-top: 50px;
         width: 100%;
     }
 
@@ -431,5 +441,14 @@
         justify-content: center;
         align-items: center;
     }  
+}
+
+/* Global Responsive Styling */
+
+@media only screen and (max-width: 600px) {
+    .About, .Resume, .Website {
+        padding: 10vh 5vw 10vh 5vw;
+    }
     
 }
+    
