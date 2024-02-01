@@ -8,6 +8,13 @@ export default function MainLink (props) {
 
     useEffect(()=>{
 
+        /* Screen dependencies */
+        if (window.innerWidth < 600) {
+            setAlignLink('left')
+        } else if (props.align === 'right') {
+            setAlignLink('right')
+        }
+
         /* Animation */
         const links = document.querySelectorAll('.MainLink');
         links.forEach((link)=>{
