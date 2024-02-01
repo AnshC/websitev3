@@ -1,4 +1,3 @@
-/** @jsxImportSource theme-ui */
 import './App.css';
 
 import Landing from './components/landing';
@@ -44,7 +43,7 @@ function App() {
 );
 
     return (
-      <div className="App" sx={{ backgroundColor: 'secondaryInverse' }}>
+      <div className="App">
         <RouterProvider router={router} />
       </div>
     );
