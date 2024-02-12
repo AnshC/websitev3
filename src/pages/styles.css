@@ -65,6 +65,7 @@
 
 .squares {
     margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -104,6 +105,37 @@
     margin-top: 20px;
 }
 
+.Website .icons {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.Website .icons .row {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Website .icons .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.Website .icons .row .icon {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.Website .icons .row * {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+
 @keyframes fadeIn {
     from {opacity: 0; margin-top: 0px;} 
     to {opacity: 1; margin-top: 20px;}
@@ -122,7 +154,7 @@
     width: 100%;
     white-space: nowrap;
     text-wrap: nowrap;
-    animation: scroll 3s linear infinite;
+    animation: scroll 15s linear infinite;
     padding-right: 50px;
     font-size: 40px;
     transition: all 0.2s ease;
@@ -137,7 +169,7 @@
     width: 100%;
     white-space: nowrap;
     text-wrap: nowrap;
-    animation: scrollinvert 3s linear infinite;
+    animation: scrollinvert 15s linear infinite;
     padding-right: 20px;
     font-size: 60px;
 }
@@ -177,11 +209,14 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    font-size: 20px;
 }
 
 .Design .prompt #icon {
-    margin-left: 10px;
+    margin-left: 7px;
+    fill: var(--blue);
 }
+
 
 @keyframes scroll {
     0% {
@@ -214,6 +249,7 @@
     align-items: center;
     width: max-content;
     transition: transform 0.2s ease;
+    font-size: 15px;
 }
 
 .Design .main .back:hover {
@@ -221,8 +257,9 @@
 }
 
 .Design .main .back #icon {
-    fill: var(--beige);
+    color: var(--beige);
     margin-left: 10px;
+    font-size: 20px;
 }
 
 .Design .portfolio-wrapper {
@@ -297,12 +334,14 @@
 /* Development Page */
 
 .Dev {
+    padding: 10vh 15vw 10vh 15vw;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .Dev .back {
@@ -318,7 +357,7 @@
 }
 
 .Dev .back #icon {
-    fill: var(--blue);
+    font-size: 20px;
     margin-left: 10px;
 }
 
@@ -337,20 +376,26 @@
     flex-direction: column;
 }
 
-.Resume img {
-    height: 100vh;
+.Resume .main {
+    text-align: center;
 }
 
 .Resume .content {
     display: flex;
     flex-direction: column;
+    padding: 0 10vw 0 10vw;
+}
+
+.Resume .content * {
+    font-family: 'Raleway', sans-serif;
 }
 
 .Resume h1 {
     font-size: 50px;    
+    font-weight: 800;
 }
 
-.Resume .text {
+.Resume .button {
     margin-top: 20px;
 }
 
@@ -359,6 +404,34 @@
     border-radius: 100px;
     padding: 5px 13px 5px 13px;
     width: max-content;
+}
+
+.Resume section {
+    margin: 20px 0 20px 0;
+}
+
+.Resume section h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.Resume .experience {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.Resume .experience ul {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.Resume .experience .title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.Resume .experience .date {
+    color: var(--beige-active);
 }
 
 @media only screen and (max-width: 600px) {
@@ -443,12 +516,61 @@
     }  
 }
 
+@media only screen and (max-width: 600px) {
+    
+    .Website .head .main {
+        font-size: 30px;
+    }
+    
+    .Website .content .bar {
+        height: 30px;
+    }
+
+    .Website .content .bar h1 {
+        font-size: 20px;
+    }
+    
+    .font p.main {
+        font-size: 30px;
+        text-wrap: nowrap;
+    }
+    
+    .font .display {
+        margin-top: 20px;
+    }
+
+    .font .display h1 {
+        font-size: 25px;
+    }
+
+    .font .display h2 {
+        font-size: 20px;
+    }
+
+    .font .display p {
+        font-size: 15px;
+    }
+    
+    .squares {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .squares .square .color {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+        border-radius: 10px;
+        transition: transform 0.1s ease;
+    }
+    
+}
+
 /* Global Responsive Styling */
 
 @media only screen and (max-width: 600px) {
     .About, .Resume, .Website {
         padding: 10vh 5vw 10vh 5vw;
     }
-    
 }
     

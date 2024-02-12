@@ -6,9 +6,10 @@ import Design from './pages/design';
 import ErrorPage from './components/404';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Dev from './pages/dev';
+import Dev from './pages/www';
 import Resume from './pages/resume';
 import About from './pages/about';
+import TestComponent from './components/dev';
 
 function App() {
 
@@ -28,9 +29,9 @@ function App() {
         element: <Design />
       },
       {
-        path:"/dev",
+        path:"/www",
         element: <Dev />
-      },
+      },  
       {
         path: "/resume",
         element: <Resume />
@@ -38,6 +39,10 @@ function App() {
       {
         path: "/about",
         element: <About />
+      },
+      {
+        path: "/dev",
+        element: <TestComponent />
       }
     ]
 );
