@@ -41,6 +41,7 @@ export default function TestComponent() {
 
     const loader = new GLTFLoader();
     let loadedModel;
+    /** "Retro computer" (https://skfb.ly/6ZxUN) by Tobalation is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/). */
     loader.load("/models/Computer.glb", function (gltf) {
       loadedModel = gltf.scene;
       loadedModel.rotation.x = 0.5;
