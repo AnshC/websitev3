@@ -30,11 +30,14 @@ export default function TestComponent() {
     scene.add(dlBack);
 
     renderer.setClearColor(0xffffff, 0);
+
     // scene.background = new THREE.Color(0xffffff);
     // scene.add(light);
     // scene.add(sphere);
 
     camera.position.z = 5;
+
+    // new OrbitControls(camera, renderer.domElement);
 
     const loader = new GLTFLoader();
     let loadedModel;
@@ -45,11 +48,9 @@ export default function TestComponent() {
       scene.add(loadedModel);
     });
 
-    //const controls = new OrbitControls(camera, renderer.domElement);
-
     function animate() {
       if (loadedModel) {
-        loadedModel.rotation.y -= 0.001;
+        loadedModel.rotation.y -= 0.01;
       }
       requestAnimationFrame(animate);
       renderer.render(scene, camera);
