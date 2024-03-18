@@ -1,4 +1,4 @@
-import Navigation from "../components/navigation";
+import Navigation from "../components/subcomponents/navigation";
 import { HiOutlineDownload } from "react-icons/hi";
 
 export default function Resume() {

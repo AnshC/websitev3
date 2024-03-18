@@ -1,26 +1,31 @@
-// import { Link } from "react-router-dom";
 import "./styles.css";
 import data from "../data/dev.json";
-import { useEffect } from "react";
+
+// Component import
+import Button from "../components/subcomponents/button";
 
 // Icon Imports
 import { FaGithub } from "react-icons/fa";
 import { FaGlobeAmericas } from "react-icons/fa";
+import { TbArrowBack } from "react-icons/tb";
 
 export default function Dev() {
-  useEffect(() => {
-    console.log(data.data);
-  }, []);
   return (
     <div className="Dev">
       <h1 className="fancy">Development Portfolio</h1>
       <p>a collection of my development projects.</p>
+      <Button
+        style={{ marginTop: "10px", fontSize: "13px" }}
+        icon={<TbArrowBack id="icon" />}
+        text="Home"
+        to="/"
+      />
       <div className="projects">
         {data.data.map((obj) => {
           return (
             <div className="year" key={obj.year}>
               <h1 className="fancy">{obj.year}</h1>
-              <div className="row">
+              <div className="container">
                 {obj.projects.map((project) => {
                   return (
                     <Project
@@ -55,7 +60,9 @@ function Project(props) {
       <div className="content">
         <h1>{props.name}</h1>
         <p>{props.desc}</p>
-        <p style={{ fontSize: 10, color: 'var(--beige-active)', marginTop: 5 }}>{props.fw}</p>
+        <p style={{ fontSize: 10, color: "var(--beige-active)", marginTop: 5 }}>
+          {props.fw}
+        </p>
         <div className="icons">
           <a className="" href={props.gLink}>
             <FaGithub className="icon" />

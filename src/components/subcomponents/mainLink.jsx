@@ -3,14 +3,14 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function MainLink(props) {
-  const [alignLink, setAlignLink] = useState("left");
+  const [alignBottomLink, setAlignBottomLink] = useState("left");
 
   useEffect(() => {
     /* Screen dependencies */
     if (window.innerWidth < 600) {
-      setAlignLink("left");
+      setAlignBottomLink("center");
     } else if (props.align === "right") {
-      setAlignLink("right");
+      setAlignBottomLink("right");
     }
 
     if (window.innerWidth > 600) {
@@ -62,8 +62,10 @@ export default function MainLink(props) {
         className="MainLink"
         id="main"
         style={
-          alignLink === "left"
+          alignBottomLink === "left"
             ? { alignItems: "flex-start" }
+            : alignBottomLink === "center"
+            ? { alignItems: "center" }
             : { alignItems: "flex-end" }
         }
       >

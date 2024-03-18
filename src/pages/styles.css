@@ -108,7 +108,6 @@
 }
 
 .Website .icons {
-  margin-left: 40px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -117,7 +116,7 @@
   margin-top: 40px;
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
@@ -126,6 +125,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin: 10px;
 }
 
 .Website .icons .row .icon {
@@ -206,28 +206,6 @@
   margin: 10vh 0 10vh 0;
 }
 
-.Design .main .back {
-  color: var(--beige);
-  border: 2px solid var(--beige);
-  padding: 5px 10px 5px 10px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  width: max-content;
-  transition: transform 0.2s ease;
-  font-size: 15px;
-}
-
-.Design .main .back:hover {
-  transform: scale(1.05);
-}
-
-.Design .main .back #icon {
-  color: var(--beige);
-  margin-left: 10px;
-  font-size: 20px;
-}
-
 .Design .portfolio-wrapper {
   background-color: var(--beige);
   width: 100%;
@@ -265,6 +243,10 @@
     padding: 0 10vw 0 10vw;
   }
 
+  .Design .main h1.fancy {
+    font-size: 50px;
+  }
+
   .Design .image-wrapper .head {
     display: flex;
     align-items: center;
@@ -296,6 +278,21 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .Design .image-wrapper .head h1, .Design .image-wrapper .head .colors h1 {
+    font-size: 24px;
+  }
+  .Design .main h1.fancy {
+    font-size: 30px;
+    position: relative;
+  }
+
+  .Design .main h1.fill {
+    transform: translateY(0px);
+    z-index: 1;
+}
+}
+
 /* Development Page */
 
 .Dev {
@@ -304,8 +301,9 @@
   min-height: 100vh;
 }
 
-.Dev .projects .row {
+.Dev .projects .container {
   width: 100%;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -319,10 +317,12 @@
   overflow-y: hidden;
   overflow-x: hidden;
   position: relative;
-  width: 30vw;
+  width: 400px;
   height: 250px;
   border-radius: 10px;
   transition: transform 0.15s ease;
+  margin-bottom: 25px;
+  margin-right: 25px;
 }
 
 .Dev .Project:hover {
@@ -380,6 +380,15 @@
     padding: 20px;
 }
 
+/* Dev Responsive Styles */
+
+@media only screen and (max-width: 580px) {
+  .Dev h1.fancy {
+    font-size: 20px;
+  }
+}
+
+
 /* Resume Styles */
 
 .Resume {
@@ -406,7 +415,7 @@
 }
 
 .Resume h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
 }
 
@@ -463,7 +472,7 @@
 }
 
 .About h1.main {
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -542,16 +551,20 @@
   }
 
   .About .content .text {
-    margin-top: 50px;
+    margin-top: 25px;
     width: 100%;
   }
 
   .About .content .image {
-    margin-top: 50px;
+    margin-top: 0px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .About .icons {
+    justify-content: center;
   }
 }
 

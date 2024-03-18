@@ -3,13 +3,15 @@ import { Scroll } from "../data/scroll";
 import { useState } from "react";
 
 /* Component Import */
-import Navigation from "../components/navigation";
+import Navigation from "../components/subcomponents/navigation";
 
 /* Icons Import */
 import { RiSparkling2Line } from "react-icons/ri";
 import { TbCodeAsterix } from "react-icons/tb";
 import { HiOutlineDownload } from "react-icons/hi";
 import { TbArrowBack } from "react-icons/tb";
+import { FaGithub } from "react-icons/fa";
+import { FaGlobeAmericas } from "react-icons/fa";
 
 export default function Website() {
   const [isCopied, setCopied] = useState(false);
@@ -166,6 +168,14 @@ export default function Website() {
             <div className="wrapper">
               <TbArrowBack className="icon" />
               <p className="title">tb/TbArrowBack</p>
+            </div>
+            <div className="wrapper">
+              <FaGithub className="icon" />
+              <p className="title">fa/FaGitbub</p>
+            </div>
+            <div className="wrapper">
+              <FaGlobeAmericas className="icon" />
+              <p className="title">fa/FaGlobeAmericas</p>
             </div>
           </div>
         </div>

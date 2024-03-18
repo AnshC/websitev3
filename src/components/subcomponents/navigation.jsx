@@ -4,21 +4,23 @@ import { useEffect } from "react";
 
 export default function Navigation() {
   useEffect(() => {
-    let parentElement = document.querySelector('.Navigation');
-    let topLayerElements = parentElement.querySelectorAll("li");
-    topLayerElements.forEach((element) => {
-      let targetStyle = element.children[0].style;
-      element.addEventListener("mouseover", () => {
-        targetStyle.transform = "translateX(0px) translateY(0px)";
-        targetStyle.color = "var(--blue)";
-        targetStyle.border = " 2px solid var(--blue)";
+    if (window.innerWidth > 600) {
+      let parentElement = document.querySelector(".Navigation");
+      let topLayerElements = parentElement.querySelectorAll("li");
+      topLayerElements.forEach((element) => {
+        let targetStyle = element.children[0].style;
+        element.addEventListener("mouseover", () => {
+          targetStyle.transform = "translateX(0px) translateY(0px)";
+          targetStyle.color = "var(--blue)";
+          targetStyle.border = " 2px solid var(--blue)";
+        });
+        element.addEventListener("mouseout", () => {
+          targetStyle.transform = "translateX(7px) translateY(7px)";
+          targetStyle.color = "var(--beige)";
+          targetStyle.border = "2px solid var(--beige)";
+        });
       });
-      element.addEventListener("mouseout", () => {
-       targetStyle.transform = "translateX(7px) translateY(7px)";
-       targetStyle.color = "var(--beige)";
-       targetStyle.border = "2px solid var(--beige)";
-      });
-    });
+    }
   }, []);
 
   return (

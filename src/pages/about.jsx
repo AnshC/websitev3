@@ -1,4 +1,4 @@
-import Navigation from "../components/navigation";
+import Navigation from "../components/subcomponents/navigation";
 
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";

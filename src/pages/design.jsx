@@ -1,7 +1,6 @@
 import "./styles.css";
-import { FaAngleDown } from "react-icons/fa";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import Button from "../components/subcomponents/button";
 import { TbArrowBack } from "react-icons/tb";
 import Tilty from "react-tilty";
 import { Scroll } from "../data/scroll";
@@ -28,12 +27,13 @@ export default function Design() {
             "Design is not just what it looks like and feels like. Design is how
             it works. ~ Steve Jobs
           </p>
-          <p className="prompt fancy">
-            Scroll down to view portfolio <FaAngleDown id="icon" />
+          <p
+            className="prompt"
+            style={{ fontFamily: "Raleway", fontWeight: 700 }}
+          >
+            Scroll down to view portfolio.
           </p>
-          <Link className="back link fancy" to="/">
-            Home <TbArrowBack id="icon" />
-          </Link>
+          <Button icon={<TbArrowBack id="icon" />} text="Home" to="/" />
         </div>
       </section>
       <div className="portfolio-wrapper">
@@ -42,7 +42,9 @@ export default function Design() {
             <div
               className="image-wrapper"
               key={img.fileName}
-              style={{ backgroundColor: img.palette.background }}
+              style={{
+                backgroundColor: img.palette.background,
+              }}
             >
               <div className="head">
                 <div className="name">

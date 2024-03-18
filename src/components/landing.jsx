@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Scroll } from "../data/scroll";
 
 /* Component Import */
-import Navigation from "./navigation";
-import MainLink from "./mainLink";
+import Navigation from "./subcomponents/navigation";
+import MainLink from "./subcomponents/mainLink";
 
 /* Icon Imports */
 import { RiSparkling2Line } from "react-icons/ri";
