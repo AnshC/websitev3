@@ -1,78 +1,81 @@
 /* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
-    font-family: 'Sake';
-    src: url('./add-ons/sake_moru.ttf');
+  font-family: "Sake";
+  src: url("./add-ons/sake_moru.ttf");
 }
 
 /* Root Settings */
 
 html {
-    scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
 }
 
 :root {
-    --beige: #EFEFD0;
-    --beige-active: #b0b09b;
-    --orange: #FF6B35;
-    --peach: #F7C59F;
-    --lapis: #1A659E;
-    --blue: #1482d6;
-    /* --black: #05050f; */
-    --black: #00010a; 
+  --beige: #efefd0;
+  --beige-active: #b0b09b;
+  --orange: #ff6b35;
+  --peach: #f7c59f;
+  --lapis: #1a659e;
+  --blue: #1482d6;
+  /* --black: #05050f; */
+  --black: #00010a;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
-    color: var(--beige);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+  color: var(--beige);
 }
 
-h1, h2, h3, p {
-    color: var(--beige);
-    transition: all 0.3s;
+h1,
+h2,
+h3,
+p {
+  color: var(--beige);
+  transition: all 0.3s;
 }
 
 body {
-    background-color: var(--black);
-    background-blend-mode: color-dodge;
-    background-image: radial-gradient(#1482d6, #092840, var(--black));
-    background-size: 200vw;
-    background-repeat: no-repeat;
-    background-position: center;
+    overscroll-behavior: none;
+  background-color: var(--black);
+  background-image: url("/public/img/bg/bg_1_v2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+    
 }
 
 .fancy {
-    font-family: 'Sake';
+  font-family: "Sake";
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .link-default {
-    color: var(--blue);
+  color: var(--blue);
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--beige);
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--beige-active);
-  }
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--beige);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--beige-active);
+}

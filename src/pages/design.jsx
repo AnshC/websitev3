@@ -19,68 +19,11 @@ export default function Design() {
   return (
     <div className="Design">
       <section className="jumbo">
-        <div className="bar">
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-        </div>
-        <div className="bar bar-2">
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-        </div>
-        <div className="bar special">
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-        </div>
-        <div className="bar bar-2 special">
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-        </div>
         <div className="main">
-          <h1 style={{ fontSize: 50 }}>de·sign</h1>
+          <div className="heading">
+            <h1 className="fancy fill">de·sign</h1>
+            <h1 className="fancy outline">port·fo·li·o</h1>
+          </div>
           <p>
             "Design is not just what it looks like and feels like. Design is how
             it works. ~ Steve Jobs
@@ -91,66 +34,6 @@ export default function Design() {
           <Link className="back link fancy" to="/">
             Home <TbArrowBack id="icon" />
           </Link>
-        </div>
-        <div className="bar">
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-        </div>
-        <div className="bar bar-2">
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-        </div>
-        <div className="bar special">
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-          <h1 className="fancy">design</h1>
-        </div>
-        <div className="bar bar-2 special">
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
-          <h1 className="fancy">portfolio</h1>
         </div>
       </section>
       <div className="portfolio-wrapper">

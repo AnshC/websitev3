@@ -1,180 +1,206 @@
 /* Global Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Landing Page Styles */
 
 .Landing {
-    overflow-x: hidden;
-    min-height: 100vh;
-    width: 100%;
-    padding: 10vh 15vw 10vh 15vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  overflow-x: hidden;
+  min-height: 100vh;
+  width: 100%;
+  padding: 10vh 15vw 10vh 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Landing .head {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Landing .head .image {
-    background-image: url(/public/img/me.jpeg);
-    background-size: 120%;
-    background-position: center;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 30px;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 30px;
+  background-image: url(/public/img/me.jpeg);
+  background-size: 120%;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
 }
 
 .Landing .head h1 {
-    color: var(--blue);
-    font-size: 40px;
+  color: var(--blue);
+  font-size: 40px;
 }
 
 .Landing .links {
-    width: 100%;
+  width: 100%;
 }
 
 .Landing .footer {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 /* Navigation Styles */
 
 .Navigation {
-    margin-top: 50px;
-    width: 100%;
-    height: 10vh;
+  margin-top: 50px;
+  width: 100%;
+  height: 10vh;
 }
 
 .Navigation ul {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    justify-content: space-evenly;
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
 }
 
 .Navigation ul li {
-    cursor: pointer;
-    color: var(--beige);
-    background-color: transparent;
-    padding: 5px 20px 5px 20px;
-    border: 2px solid var(--beige);
+  cursor: pointer;
+  color: var(--beige);
+  background-color: transparent;
+  width: 145px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
 }
 
-.Navigation ul li:hover {
-    color:var(--black); 
-    background-color: var(--beige); 
+.Navigation ul li .top {
+  background-color: var(--black);
+  z-index: 2;
+  color: var(--beige);
+  border: 2px solid var(--beige);
+  transform: translateX(7px) translateY(7px);
+  transition: all 0.2s ease;
+}
+
+.Navigation ul li .top,
+.Navigation ul li .bottom {
+  width: 100%;
+  height: calc(100% - 7px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Navigation ul li .bottom {
+  position: absolute;
+  border: 2px solid var(--blue);
+  z-index: 1;
+  transition: all 0.15s ease-in-out;
 }
 
 /* MainLink Styles */
 
 .MainLink {
-    margin: 5vh 0 5vh 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    overflow-x: hidden;
+  margin: 5vh 0 5vh 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  overflow-x: hidden;
 }
 
 .MainLink .text * {
-    font-size: 100px;
-    transition: transform 0.1s ease;
+  font-size: 100px;
+  transition: transform 0.1s ease;
 }
 
 .MainLink #titleStroke {
-    color: transparent;
-    -webkit-text-stroke: 1px var(--blue);
-    text-stroke: 1px var(--blue);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--blue);
+  text-stroke: 1px var(--blue);
 }
 
 .MainLink #titleFill {
-    color: var(--beige);
-    position: absolute;
-    transform: translateX(50px) translateY(50px);
+  color: var(--beige);
+  position: absolute;
+  transform: translateX(50px) translateY(50px);
 }
 
 .MainLink .description {
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 50px;
 }
 
 .MainLink p {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
 /* Global Responsive Stlyes */
 
 @media only screen and (max-width: 880px) {
-    .MainLink .text * {
-        font-size: 50px;
-    }
+  .MainLink .text * {
+    font-size: 50px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .Landing {
-        padding: 10vh 5vw 10vh 5vw;
-    }
-    .MainLink #titleFill {
-        transform: translateX(20px) translateY(20px);
-    }
-    .MainLink .description {
-        margin-top: 30px;
-        font-size: 20px;
-    }
-    .MainLink {
-        margin: 0;
-    }
+  .Landing {
+    padding: 10vh 5vw 10vh 5vw;
+  }
+  .MainLink #titleFill {
+    transform: translateX(20px) translateY(20px);
+  }
+  .MainLink .description {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .MainLink {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-width: 661px) {
-    .Navigation ul *{
-        font-size: 15px;
-    }
-    .Navigation ul li {
-        padding: 5px 10px 5px 10px;
-    }
+  .Navigation ul * {
+    font-size: 15px;
+  }
+  .Navigation ul li {
+    padding: 5px 10px 5px 10px;
+  }
 }
 
 /* Development Page Styles */
 
 .test {
-    overflow-x: hidden;
-    position: relative;
+  overflow-x: hidden;
+  position: relative;
 }
 
 #canvas {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .test .content {
-    position: absolute;
-    transform: translateY(-100vh);
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 20;
+  position: absolute;
+  transform: translateY(-100vh);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 20;
 }

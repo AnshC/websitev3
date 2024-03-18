@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "year": 2024,
+            "projects": [
+                {
+                    "name": "Personal Website",
+                    "description": "my design, and web dev portfolio.",
+                    "gLink": "https://github.com/AnshC/www",
+                    "wLink": "https://anshc.netlify.app",
+                    "frameworks": "react.js, three.js",
+                    "picture": "sample.png"
+                }
+            ]
+        }
+    ]
+}
