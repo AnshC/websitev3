@@ -21,14 +21,14 @@ export default function MainLink(props) {
         const strokeElement = link.children[0].children[0].children[1];
         link.addEventListener("mouseover", () => {
           filledElement.style.color = "rgba(0,0,0,0)";
-          filledElement.style.webkitTextStroke = "1px var(--blue)";
+          filledElement.style.webkitTextStroke = "2px var(--blue)";
           filledElement.style.transform = "translateX(30px) translateY(30px)";
           strokeElement.style.color = "var(--beige)";
           strokeElement.style.webkitTextStroke = "initial";
         });
         link.addEventListener("mouseleave", () => {
           strokeElement.style.color = "transparent";
-          strokeElement.style.webkitTextStroke = "1px var(--blue)";
+          strokeElement.style.webkitTextStroke = "2px var(--blue)";
           filledElement.style.color = "var(--beige)";
           filledElement.style.webkitTextStroke = "initial";
           filledElement.style.transform = "translateX(50px) translateY(50px)";
@@ -41,14 +41,14 @@ export default function MainLink(props) {
         const strokeElement = link.children[0].children[0].children[1];
         link.addEventListener("mouseover", () => {
           filledElement.style.color = "rgba(0,0,0,0)";
-          filledElement.style.webkitTextStroke = "1px var(--blue)";
+          filledElement.style.webkitTextStroke = "2px var(--blue)";
           filledElement.style.transform = "translateX(10px) translateY(10px)";
           strokeElement.style.color = "var(--beige)";
           strokeElement.style.webkitTextStroke = "initial";
         });
         link.addEventListener("mouseleave", () => {
           strokeElement.style.color = "transparent";
-          strokeElement.style.webkitTextStroke = "1px var(--blue)";
+          strokeElement.style.webkitTextStroke = "2px var(--blue)";
           filledElement.style.color = "var(--beige)";
           filledElement.style.webkitTextStroke = "initial";
           filledElement.style.transform = "translateX(20px) translateY(20px)";
