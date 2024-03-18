@@ -71,7 +71,7 @@
   .MainLink #titleStroke {
     color: transparent;
     -webkit-text-stroke: 2px var(--blue);
-    text-stroke: 1px var(--blue);
+    /* text-stroke: 1px var(--blue); /* Not needed as of now */ 
   }
   
   .MainLink #titleFill {
