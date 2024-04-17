@@ -23,8 +23,21 @@ export default function Resume() {
           <section>
             <h2>Experience</h2>
             <div className="experience">
+              <p className="title">
+                CDT Member at Michigan Advertising & Marketing
+              </p>
+              <p className="date">01/2024 - present (Ann Arbor, MI)</p>
+              <ul>
+                <li>
+                  Worked on the project team for our client -{" "}
+                  <a href="https://avalonbreads.net/">Avalon (Ann Arbor)</a>
+                </li>
+                <li>Designed various graphics to bolster student awareness.</li>
+              </ul>
+            </div>
+            <div className="experience">
               <p className="title">Summer Marketing Intern at Volkswagen</p>
-              <p className="date">03/2023 - 06/2024</p>
+              <p className="date">03/2023 - 06/2024 (Jodhpur, RJ)</p>
               <ul>
                 <li>
                   Organized marketing event to increase audience, and offline
@@ -44,21 +57,10 @@ export default function Resume() {
               </ul>
             </div>
             <div className="experience">
-              <p className="title">Founder, Graphic Designer at Cafe Dusk</p>
-              <p className="date">04/2022 - 04/2023</p>
-              <ul>
-                <li>Designed logo, and created brand identity</li>
-                <li>
-                  Managed social media to increase online presence and reach to
-                  over 10,000 impressions in one month
-                </li>
-              </ul>
-            </div>
-            <div className="experience">
               <p className="title">
                 Front-end Web Developer at Pacific Sparkles
               </p>
-              <p className="date">09/2020-09/2021</p>
+              <p className="date">09/2020-09/2021 (Jodhpur, RJ)</p>
               <ul>
                 <li>
                   Designed and developed the website, acting as an online

@@ -8,8 +8,20 @@
                     "description": "my design, and web dev portfolio.",
                     "gLink": "https://github.com/AnshC/www",
                     "wLink": "https://anshc.netlify.app",
-                    "frameworks": "react.js, three.js",
-                    "picture": "sample.png"
+                    "frameworks": "react.js",
+                    "picture": "personal_website.png"
+                }
+            ]
+        }, {
+            "year": 2021,
+            "projects": [
+                {
+                    "name": "Pacific Sparkles",
+                    "description": "a website for a local handmande soap company.",
+                    "gLink": "https://github.com/AnshC/pacific-sparkles",
+                    "wLink": "https://pacificsparkles.netlify.app",
+                    "frameworks": "react.js",
+                    "picture": "pacific_sparkles.png"
                 }
             ]
         }

@@ -39,7 +39,7 @@ export default function Landing() {
           <Link to="/website" className="link-default">
             website
           </Link>{" "}
-          last updated 3/18/2024
+          last updated 4/17/2024
         </p>
       </div>
     </div>
