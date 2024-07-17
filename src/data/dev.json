@@ -10,6 +10,13 @@
                     "wLink": "https://anshc.netlify.app",
                     "frameworks": "react.js",
                     "picture": "personal_website.png"
+                }, {
+                    "name": "Budgeting",
+                    "description": "coming soon.",
+                    "gLink": "https://google.com",
+                    "wLink": "https://google.com",
+                    "frameworks": "react.js",
+                    "picture": ""
                 }
             ]
         }, {
