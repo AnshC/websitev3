@@ -22,6 +22,12 @@
                     "wLink": "https://pacificsparkles.netlify.app",
                     "frameworks": "react.js",
                     "picture": "pacific_sparkles.png"
+                }, {
+                    "name": "Old Portfolio",
+                    "description": "my older design and development website.",
+                    "gLink": "https://github.com/AnshC/my-website",
+                    "frameworks": "react.js",
+                    "picture": "personal_website_old.png"
                 }
             ]
         }
