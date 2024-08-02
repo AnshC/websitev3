@@ -45,7 +45,7 @@ export default function Resume() {
                 </li>
                 <li>
                   Conducted photo shoots and video shoots for social media
-                  profiels
+                  profiles
                 </li>
                 <li>Designed marketing graphics for social media</li>
                 <li>
