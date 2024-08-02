@@ -33,6 +33,7 @@
                     "name": "Old Portfolio",
                     "description": "my older design and development website.",
                     "gLink": "https://github.com/AnshC/my-website",
+                    "wLink": "https://anshcv1.netlify.app",
                     "frameworks": "react.js",
                     "picture": "personal_website_old.png"
                 }
