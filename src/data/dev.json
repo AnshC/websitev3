@@ -11,12 +11,12 @@
                     "frameworks": "react.js",
                     "picture": "personal_website.png"
                 }, {
-                    "name": "Budgeting",
-                    "description": "coming soon.",
+                    "name": "Visualizing F1 Positions",
+                    "description": "Visualize F1 Drivers' Positions",
                     "gLink": "https://google.com",
                     "wLink": "https://google.com",
                     "frameworks": "react.js",
-                    "picture": ""
+                    "picture": "f1_positions.png"
                 }
             ]
         }, {
