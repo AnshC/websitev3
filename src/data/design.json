@@ -1,0 +1,81 @@
+{
+    "collections": [
+        {
+            "name": "EXPERIMENTAL",
+            "description": "an experimental design style, using primary sources.",
+            "key": "experimental",
+            "files": [
+                {
+                    "name": "Halftone",
+                    "location": "img/portfolio/halftone.jpg",
+                    "fileName": "halftone.jpg"
+                }, 
+                {
+                    "name": "Felis Catus",
+                    "location": "img/portfolio/felis-catus.jpg",
+                    "fileName": "felis-catus.jpg"
+                }
+            ]
+        },
+        {
+            "name": "ALBUM ART",
+            "description": "re-designing existing album art from various artists",
+            "key": "album-art",
+            "files": [
+                {
+                    "name": "Dawn FM",
+                    "location": "img/portfolio/dawnfm.jpg",
+                    "fileName": "dawnfm.jpg"
+                }, 
+                {
+                    "name": "Starboy",
+                    "location": "img/portfolio/starboy.jpg",
+                    "fileName": "starboy.jpg"
+                }, 
+                {
+                    "name": "After Hours",
+                    "location": "img/portfolio/afterhours.jpg",
+                    "fileName": "afterhours.jpg"
+                }, 
+                {
+                    "name": "Alone At Prom",
+                    "location": "img/portfolio/chrome.jpg",
+                    "fileName": "chrome.jpg"
+                }
+            ]
+        }, {
+            "name": "VINTAGE",
+            "key": "vintage",
+            "description": "vintage design style, influenced by vintage ads",
+            "files": [
+                {
+                    "name": "Ferrari F40",
+                    "location": "img/portfolio/halftone.jpg",
+                    "fileName": "halftone.jpg"
+                }
+            ]
+        } , {
+            "name": "WEBSITE DESIGN",
+            "key": "websites",
+            "description": "vintage design style, influenced by vintage ads",
+            "files": [
+                {
+                    "name": "Ferrari F40",
+                    "location": "img/portfolio/halftone.jpg",
+                    "fileName": "halftone.jpg"
+                }
+            ]
+        }, {
+            "name": "MISC",
+            "key": "misc",
+            "description": "non-categorized art",
+            "files": [
+                {
+                    "name": "Ferrari F40",
+                    "location": "img/portfolio/halftone.jpg",
+                    "fileName": "halftone.jpg"
+                }
+            ]
+        }
+    ]
+}

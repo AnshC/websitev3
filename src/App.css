@@ -52,6 +52,10 @@ body {
   font-family: "Sake";
 }
 
+.sans {
+  font-family: 'Raleway';
+}
+
 .link {
   text-decoration: none;
 }

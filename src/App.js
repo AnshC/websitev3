@@ -25,6 +25,10 @@ function App() {
         element: <Website />
       },
       {
+        path: "/design/:collection",
+        element: <Design />
+      },
+      {
         path: "/design",
         element: <Design />
       },

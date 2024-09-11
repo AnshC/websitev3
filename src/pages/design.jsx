@@ -1,110 +1,69 @@
 import "./styles.css";
 import { useState, useEffect } from "react";
-import Button from "../components/subcomponents/button";
-import { TbArrowBack } from "react-icons/tb";
-import Tilty from "react-tilty";
 import { Scroll } from "../data/scroll";
+import { Link, useParams } from "react-router-dom";
+import Tilty from "react-tilty";
 
-import data from "../data/img.json";
+import data from "../data/design.json"
 
 export default function Design() {
+
+  let { collectionName } = useParams();
+
   Scroll();
   const [images, setImages] = useState([]);
+  const [collection, setCollection] = useState({"files": [ {location: ""}]})
 
   useEffect(() => {
-    setImages(data.images);
+    setCollection(data.collections[0])
+    setImages(data.collections);
+    console.log(collectionName);
   }, []);
+
+  useEffect(()=>{
+    let parentElement = document.querySelector(".links");
+    let topLayerElements = parentElement.querySelectorAll("li");
+    topLayerElements.forEach((element) => {
+      let targetStyle = element.children[0].style;
+      element.addEventListener("mouseover", () => {
+        targetStyle.transform = "translateX(0px) translateY(0px)";
+        targetStyle.color = "var(--blue)";
+        targetStyle.border = " 2px solid var(--blue)";
+      });
+      element.addEventListener("mouseout", () => {
+        targetStyle.transform = "translateX(7px) translateY(7px)";
+        targetStyle.color = "var(--beige)";
+        targetStyle.border = "2px solid var(--beige)";    
+      });
+    });
+  })
 
   return (
     <div className="Design">
-      <section className="jumbo">
-        <div className="main">
+        <div className="top">
+          <div className="nav">
           <div className="heading">
-            <h1 className="fancy fill">de·sign</h1>
-            <h1 className="fancy outline">port·fo·li·o</h1>
+            <h1 className="fancy">de·sign <span className="fancy" style={{ color: 'var(--blue)'}}>port·fo·li·o</span></h1>
           </div>
-          <p>
-            "Design is not just what it looks like and feels like. Design is how
-            it works. ~ Steve Jobs
-          </p>
-          <p
-            className="prompt"
-            style={{ fontFamily: "Raleway", fontWeight: 700 }}
-          >
-            Scroll down to view portfolio.
-          </p>
-          <Button icon={<TbArrowBack id="icon" />} text="Home" to="/" />
+          </div>
         </div>
-      </section>
-      <div className="portfolio-wrapper">
-        {images.map((img) => {
-          return (
-            <div
-              className="image-wrapper"
-              key={img.fileName}
-              style={{
-                backgroundColor: img.palette.background,
-              }}
-            >
-              <div className="head">
-                <div className="name">
-                  <h1
-                    className="fancy"
-                    style={{ color: img.palette.backgroundInverse }}
-                  >
-                    Ansh
-                  </h1>
-                  <h1
-                    className="fancy"
-                    style={{ color: img.palette.backgroundInverse }}
-                  >
-                    Chauhan
-                  </h1>
-                  <h1
-                    className="fancy"
-                    style={{ color: img.palette.backgroundInverse }}
-                  >
-                    {img.fileName}
-                  </h1>
-                </div>
-                <div className="colors">
-                  <h1
-                    className="background fancy"
-                    style={{
-                      color: img.palette.background,
-                      WebkitTextStroke: `1px ${img.palette.backgroundInverse}`,
-                    }}
-                  >
-                    {img.palette.background}
-                  </h1>
-                  <h1 className="fancy" style={{ color: img.palette.primary }}>
-                    {img.palette.primary}
-                  </h1>
-                  <h1
-                    className="fancy"
-                    style={{ color: img.palette.secondary }}
-                  >
-                    {img.palette.secondary}
-                  </h1>
-                  <h1 className="fancy" style={{ color: img.palette.tertiary }}>
-                    {img.palette.tertiary}
-                  </h1>
-                  <h1 className="fancy" style={{ color: img.palette.other }}>
-                    {img.palette.other}
-                  </h1>
-                </div>
+        <div className="main">
+        <div className="list">
+          <ul className="links">
+          {images.map((collection)=>{
+            return (
+              <div key={collection.key}>
+                <Link to={`/design/${collection.key}`} id="Link">
+              <li>
+                <div className="front fancy">{collection.name}</div>
+                <div className="back"></div>
+              </li></Link>
               </div>
-              <Tilty scale={1.05}>
-                <img
-                  src={img.location}
-                  alt={img.description}
-                  style={{ height: img.relativeSize, width: "auto" }}
-                />
-              </Tilty>
-            </div>
-          );
-        })}
-      </div>
+            )
+          })}
+          </ul>
+        </div>
+        </div>
     </div>
   );
 }
