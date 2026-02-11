@@ -13,8 +13,8 @@
                 }, {
                     "name": "Visualizing F1 Positions",
                     "description": "Visualize F1 Drivers' Positions",
-                    "gLink": "https://google.com",
-                    "wLink": "https://google.com",
+                    "gLink": "https://github.com/AnshC/visualizing-f1-positions",
+                    "wLink": "https://github.com/AnshC/visualizing-f1-positions",
                     "frameworks": "react.js",
                     "picture": "f1_positions.png"
                 }
