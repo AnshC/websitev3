@@ -19,7 +19,7 @@ export default function About() {
         <div className="text">
           <p className="body">
             Hey! I'm Ansh Chauhan, an undergraduate at the University of
-            Michigan (class of 2027), majoring in computer engineering. I'm a
+            Michigan (class of 2027), majoring in Data Science. I'm a
             self-taught and motivated tech enthusiast with a focus on front-end
             web development and design, alongside graphic designing. I also am a
             coffee enthusiast and spend a lot of my free time indulging in
