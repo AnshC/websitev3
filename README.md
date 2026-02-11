@@ -1,3 +1,7 @@
 # My Portfolio
 
-Updated as of: 3/18/2024.
+Made with React.js
+
+Fonts by Kulokale and Google.
+
+Last update: 11th February 2026.
