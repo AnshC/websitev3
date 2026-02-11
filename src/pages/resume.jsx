@@ -16,43 +16,52 @@ export default function Resume() {
             <h2>Profile</h2>
             <div className="experience">
               Self-motivated undergraduate at the University of Michigan,
-              pursuing Computer Engineering. Experienced in web design,
-              front-end web development, and graphic design.
+              majoring in Data Science. Experienced in web design, front-end web
+              development, and graphic design.
             </div>
           </section>
           <section>
             <h2>Experience</h2>
             <div className="experience">
               <p className="title">
-                CDT Member at Michigan Advertising & Marketing
+                Communications Assistant - University of Michigan (IOE
+                Department)
               </p>
-              <p className="date">01/2024 - present (Ann Arbor, MI)</p>
+              <p className="date">Sep. 2025 – Dec. 2025 (Ann Arbor, MI)</p>
               <ul>
                 <li>
-                  Worked on the project team for our client -{" "}
-                  <a href="https://avalonbreads.net/">Avalon (Ann Arbor)</a>
+                  Owned updates to the department website and content calendar
+                  to ensure timely delivery of events and announcements.
                 </li>
-                <li>Designed various graphics to bolster student awareness.</li>
+                <li>
+                  Led weekly newsletter distribution via Mailchimp to 900+
+                  student and faculty subscribers, curating high-impact
+                  departmental content.
+                </li>
+                <li>
+                  Drove social media growth through visual content creation,
+                  increasing reach by 63.3% and generating 300,000+ views over
+                  90 days.
+                </li>
               </ul>
             </div>
             <div className="experience">
-              <p className="title">Summer Marketing Intern at Volkswagen</p>
-              <p className="date">03/2023 - 06/2024 (Jodhpur, RJ)</p>
+              <p className="title">
+                Creative Design Team Member - Michigan Advertising & Marketing
+              </p>
+              <p className="date">Jan. 2024 – Aug. 2025 (Ann Arbor, MI)</p>
               <ul>
                 <li>
-                  Organized marketing event to increase audience, and offline
-                  presence in a small city
+                  Conducted in-depth research on client brands to develop
+                  informed creative strategies.
                 </li>
                 <li>
-                  Conducted photo shoots and video shoots for social media
-                  profiles
-                </li>
-                <li>Designed marketing graphics for social media</li>
-                <li>
-                  Handled social media profile to increase online presence
+                  Collaborated with the market research team to design solutions
+                  tailored to client requirements.
                 </li>
                 <li>
-                  Researched and understood the company's presence locally.
+                  Provided design consultations to 4+ companies, delivering both
+                  digital and print design solutions.
                 </li>
               </ul>
             </div>
@@ -79,7 +88,7 @@ export default function Resume() {
             <div className="experience">
               <p className="title">University of Michigan</p>
               <p className="date">Sep 2023 - Present</p>
-              <p className="text">B.S.E in Computer Engineering</p>
+              <p className="text">B.S.E in Data Science</p>
             </div>
           </section>
         </div>
